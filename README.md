@@ -1,4 +1,5 @@
 # Instructions and how to use marvell command line interface made for amd64 on arm64 with box64 docker container
+More info: https://github.com/Weilbyte/box
 ## Hardware
 - Raspberry Pi CM4 and IO Board with PCIE Connector
 - Marvell® 88SE9220/9230 PCIe to SATA 6Gb/s Controllers RAID 0/1/10 HyperDuo
