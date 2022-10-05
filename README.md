@@ -7,9 +7,8 @@
 ## Prerequisites
 - Docker
 - 64bit OS
-# Download mvcli and usage instructions
+# Download mvcli
 - Found here: https://www.dell.com/support/home/de-ch/drivers/driversdetails?driverid=67hr5
-### Download:
 ```
 wget https://dl.dell.com/FOLDER04572610M/1/mvcli%204.1.13.31_A01.zip
 unzip 'mvcli 4.1.13.31_A01.zip'
@@ -19,7 +18,7 @@ cp ../'mvcli 4.1.13.31_A01'/x64/cli/mvcli $(pwd)
 chmod 755 $(pwd)/mvcli
 cp ../'mvcli 4.1.13.31_A01'/x64/cli/libmvraid.so $(pwd)
 ```
-### Usage:
+# Usage instructions:
 Run:
 ```
 sudo docker run -it --name mvcli --rm -e BOX64_LOG=0 -e BOX64_LD_LIBRARY_PATH=/library --privileged -v $(pwd):/binary  -v $(pwd):/library weilbyte/box:debian-11 /binary/mvcli
